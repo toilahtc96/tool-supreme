@@ -30,12 +30,15 @@ import org.openqa.selenium.remote.RemoteWebElement as RemoteWebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
 WebUI.openBrowser('https://www.supremenewyork.com/mobile/#categories/new')
+def timeRun = new Date(2019,12,23,5,15,0);
+println (timeRun - new Date())
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 def name = 'Bandana Box Logo Tee'
 
 //Checkerboard Puffy Jacket
+//if (WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Supreme/spName'), 10)) {
 while (!(CustomKeywords.'test.jquery.clickByName'('Checkerboard Puffy Jacket'))) {
     WebUI.delay(0.2)
 }
@@ -52,22 +55,10 @@ if (By.id('size-options')) {
     }
     
     if (By.className('cart-button')) {
-        def cart = driver.findElement(By.className('cart-button'))
+        driver.findElement(By.className('cart-button')).click()
 
-        if (cart) {
-            cart.click()
+        driver.findElement(By.id('checkout-now')).click()
 
-            if (By.id('checkout-now')) {
-                def checkoutNow = driver.findElement(By.id('checkout-now'))
-
-                if (checkoutNow) {
-                    checkoutNow.click()
-
-                    CustomKeywords.'test.jquery.fillInfo'()
-                }
-            } else {
-                WebUI.closeBrowser()
-            }
-        }
+        CustomKeywords.'test.jquery.fillInfo'()
     }
 }

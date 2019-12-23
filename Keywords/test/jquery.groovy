@@ -40,8 +40,8 @@ public class jquery {
 	@Keyword
 	def clickByName(String name) {
 		WebDriver driver = DriverFactory.getWebDriver()
-
 		JavascriptExecutor js;
+
 		if (driver instanceof JavascriptExecutor) {
 			js = (JavascriptExecutor)driver;
 		}
@@ -85,9 +85,21 @@ public class jquery {
 		JavascriptExecutor js;
 		if (driver instanceof JavascriptExecutor) {
 			js = (JavascriptExecutor)driver;
+
 		}
+
+
+
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
 		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
 		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
+		/// Moi ` truoc
 		js.executeScript("\$('#order_tel').val('09096492311')");
 		js.executeScript("\$('#order_billing_zip').val('3320001')");
 		js.executeScript("\$('#order_billing_state').val(' 埼玉県')");
@@ -100,7 +112,12 @@ public class jquery {
 		js.executeScript("\$('#credit_card_year').val('2022')");
 		js.executeScript("\$('#credit_card_cvv').val('217')");
 		js.executeScript("\$('#order_terms').click()");
-		//		js.executeScript("\$('#submit_button').click()");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
+
+		//			submit
+		//		    js.executeScript("\$('#submit_button').click()");
+
 	}
 
 
@@ -109,7 +126,7 @@ public class jquery {
 		WebDriver driver = DriverFactory.getWebDriver()
 
 		driver = DriverFactory.getWebDriver()
-		
+
 
 
 		def bl = false;
