@@ -30,8 +30,10 @@ import org.openqa.selenium.remote.RemoteWebElement as RemoteWebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
 WebUI.openBrowser('https://www.supremenewyork.com/mobile/#categories/new')
-def timeRun = new Date(2019,12,23,5,15,0);
-println (timeRun - new Date())
+
+def timeRun = new Date(2019, 12, 23, 5, 15, 0)
+
+println(timeRun - new Date())
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -50,10 +52,8 @@ while (CustomKeywords.'test.jquery.loadSoldOut'()) {
 if (By.id('size-options')) {
     def size = driver.findElement(By.id('size-options'))
 
-    if (size) {
-        size.sendKeys('Large')
-    }
-    
+    size.sendKeys('Large')
+
     if (By.className('cart-button')) {
         driver.findElement(By.className('cart-button')).click()
 
