@@ -1,38 +1,12 @@
 package test
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
-
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
-
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
-
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.WebDriver as WebDriver
-import java.util.List
-import java.util.ArrayList
-
-import org.junit.After
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
-
+import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.remote.RemoteWebDriver
-import org.openqa.selenium.remote.RemoteWebElement
+
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 
@@ -40,8 +14,8 @@ public class jquery {
 	@Keyword
 	def clickByName(String name) {
 		WebDriver driver = DriverFactory.getWebDriver()
-
 		JavascriptExecutor js;
+		
 		if (driver instanceof JavascriptExecutor) {
 			js = (JavascriptExecutor)driver;
 		}
@@ -85,9 +59,21 @@ public class jquery {
 		JavascriptExecutor js;
 		if (driver instanceof JavascriptExecutor) {
 			js = (JavascriptExecutor)driver;
+
 		}
+
+
+
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
 		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
 		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
+		/// Moi ` truoc
 		js.executeScript("\$('#order_tel').val('09096492311')");
 		js.executeScript("\$('#order_billing_zip').val('3320001')");
 		js.executeScript("\$('#order_billing_state').val(' 埼玉県')");
@@ -100,7 +86,12 @@ public class jquery {
 		js.executeScript("\$('#credit_card_year').val('2022')");
 		js.executeScript("\$('#credit_card_cvv').val('217')");
 		js.executeScript("\$('#order_terms').click()");
-		//		js.executeScript("\$('#submit_button').click()");
+		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
+		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
+
+		//			submit
+		//		    js.executeScript("\$('#submit_button').click()");
+
 	}
 
 

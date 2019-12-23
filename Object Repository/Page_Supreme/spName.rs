@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;products&quot;)/ul[1]/li[@class=&quot;selectable&quot;]/div[@class=&quot;clearfix&quot;]/span[@class=&quot;info&quot;]/span[@class=&quot;name&quot;][count(. | //span[@class = 'name']) = count(//span[@class = 'name'])]</value>
+         <value>//span[@class = 'name']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -38,7 +38,7 @@
       <value>GORE-TEX 700-Fill Down Parka</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
