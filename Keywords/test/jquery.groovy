@@ -15,7 +15,7 @@ public class jquery {
 	def clickByName(String name) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		JavascriptExecutor js;
-		
+
 		if (driver instanceof JavascriptExecutor) {
 			js = (JavascriptExecutor)driver;
 		}
@@ -64,30 +64,30 @@ public class jquery {
 
 
 
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_billing_name').val('Nguyen duc manh')");
+		js.executeScript("\$('#order_email').val('anhdeptraihanoi1@gmail.com')");
 		/// Moi ` truoc
-		js.executeScript("\$('#order_tel').val('09096492311')");
-		js.executeScript("\$('#order_billing_zip').val('3320001')");
-		js.executeScript("\$('#order_billing_state').val(' 埼玉県')");
-		js.executeScript("\$('#order_billing_city').val('川口市朝日2-22-1')");
-		js.executeScript("\$('#order_billing_address').val('301号　セザール川口朝日町')");
+		js.executeScript("\$('#order_tel').val('07075338386')");
+		js.executeScript("\$('#order_billing_zip').val('1670032')");
+		js.executeScript("\$('#order_billing_state').val(' 東京都')");
+		js.executeScript("\$('#order_billing_city').val('杉並区天沼1-24-13')");
+		js.executeScript("\$('#order_billing_address').val('レオパレスプリマベーラ荻窪205号室')");
 		js.executeScript("\$('#remember_address').click()");
 		js.executeScript("\$('#credit_card_type').val('visa')");
-		js.executeScript("\$('#credit_card_n').val('4986360338731019')");
-		js.executeScript("\$('#credit_card_month').val('02')");
-		js.executeScript("\$('#credit_card_year').val('2022')");
-		js.executeScript("\$('#credit_card_cvv').val('217')");
+		js.executeScript("\$('#credit_card_n').val('4624370202520297')");
+		js.executeScript("\$('#credit_card_month').val('12')");
+		js.executeScript("\$('#credit_card_year').val('2024')");
+		js.executeScript("\$('#credit_card_cvv').val('505')");
 		js.executeScript("\$('#order_terms').click()");
-		js.executeScript("\$('#order_billing_name').val('Dao Van Dung')");
-		js.executeScript("\$('#order_email').val('thegentlemen2711@gmail.com')");
 
 		//			submit
 		//		    js.executeScript("\$('#submit_button').click()");

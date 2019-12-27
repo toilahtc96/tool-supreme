@@ -40,6 +40,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 def name = 'Bandana Box Logo Tee'
 
 //Checkerboard Puffy Jacket
+//Supreme®/The North Face® Paper Print Nuptse Jacket
 //if (WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Supreme/spName'), 10)) {
 while (!(CustomKeywords.'test.jquery.clickByName'('Checkerboard Puffy Jacket'))) {
     WebUI.delay(0.2)
